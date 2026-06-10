@@ -387,10 +387,12 @@ function Manifesto() {
         </Reveal>
         <Reveal delay={400}>
           <a
-            href={`mailto:${EMAIL}`}
+            href="https://calendly.com/zazu-300spartanleads/30min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="font-label mt-12 inline-flex items-center gap-3 bg-white px-10 py-5 text-sm font-bold uppercase tracking-[0.18em] text-black transition hover:bg-gold"
           >
-            Email Zazu Directly →
+            Book A Discovery Call →
           </a>
           <div className="font-label mt-6 text-xs text-white/60">{EMAIL}</div>
         </Reveal>
