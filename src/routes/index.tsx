@@ -61,64 +61,44 @@ function Hero() {
         className="pointer-events-none absolute -left-40 top-20 h-[600px] w-[600px] rounded-full opacity-30 blur-3xl"
         style={{ background: "radial-gradient(circle, #C8102E 0%, transparent 70%)" }}
       />
-      <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-8 lg:py-20">
-        <div>
-          <Reveal>
-            <div className="font-label inline-flex items-center gap-3 text-xs text-gold">
-              <span className="h-px w-10 bg-gold/60" />
-              Performance-Based Lead Generation For Logistics
-            </div>
-          </Reveal>
-          <Reveal delay={120}>
-            <h1 className="font-display mt-8 text-6xl font-bold uppercase leading-[0.95] tracking-tight text-white sm:text-7xl lg:text-[8rem]">
-              We Don't<br />Get Paid<br /><span className="text-blood">Until You Win.</span>
-            </h1>
-          </Reveal>
-          <Reveal delay={260}>
-            <p className="mt-10 max-w-xl text-base leading-relaxed text-white/65">
-              Built For Freight Operators That Close Big. We Eat When You Eat. Start with a fully refundable{" "}
-              <span className="font-semibold text-white">$500 commitment</span> — we get to work immediately, and if we don't deliver a qualified shipper, you get every cent back.
-            </p>
-          </Reveal>
-          <Reveal delay={380}>
-            <div className="mt-10 flex flex-wrap items-center gap-8">
-              <a href="#contact" className="btn-spartan text-sm"><span>Start Winning Clients</span></a>
-              <a href="#how" className="btn-ghost-spartan text-xs">See How It Works →</a>
-            </div>
-          </Reveal>
-          <Reveal delay={520}>
-            <div className="font-label mt-12 flex flex-wrap gap-x-10 gap-y-3 text-[10px] text-white/40">
-              <span>★ Zero Retainer</span>
-              <span>★ $500 Refundable</span>
-              <span>★ Pay Per Closed Client</span>
-            </div>
-          </Reveal>
-        </div>
-
-        <div className="relative">
-          <div
-            className="pointer-events-none absolute inset-0 -z-10"
-            style={{ background: "radial-gradient(circle at 50% 40%, rgba(200,16,46,0.35) 0%, transparent 60%)" }}
-          />
-          <Reveal delay={200}>
-            <div className="relative mx-auto max-w-md lg:max-w-none">
-              <img
-                src={warrior}
-                alt="Spartan warrior with crimson crested helmet, lambda shield and upright spear"
-                className="relative z-10 mx-auto h-auto w-full max-w-[520px] drop-shadow-[0_30px_60px_rgba(200,16,46,0.4)]"
-                width={1080}
-                height={1920}
-              />
-              {/* huge ghost lambda */}
-              <div
-                className="font-display pointer-events-none absolute inset-0 flex items-center justify-center text-[28rem] font-bold leading-none text-white/[0.025]"
-                aria-hidden
-              >
-                Λ
-              </div>
-            </div>
-          </Reveal>
-        </div>
+      {/* huge ghost lambda watermark */}
+      <div
+        className="font-display pointer-events-none absolute inset-0 flex items-center justify-center text-[60vw] font-bold leading-none text-white/[0.03] select-none lg:text-[40vw]"
+        aria-hidden
+      >
+        Λ
+      </div>
+      <div className="relative mx-auto max-w-5xl px-6 py-20 lg:py-32">
+        <Reveal>
+          <div className="font-label inline-flex items-center gap-3 text-xs text-gold">
+            <span className="h-px w-10 bg-gold/60" />
+            Performance-Based Lead Generation For Logistics
+          </div>
+        </Reveal>
+        <Reveal delay={120}>
+          <h1 className="font-display mt-10 text-6xl font-bold uppercase leading-[0.95] tracking-tight text-white sm:text-7xl lg:text-[9rem]">
+            We Don't<br />Get Paid<br /><span className="text-blood">Until You Win.</span>
+          </h1>
+        </Reveal>
+        <Reveal delay={260}>
+          <p className="mt-10 max-w-xl text-base leading-relaxed text-white/65">
+            Built For Freight Operators That Close Big. We Eat When You Eat. Start with a fully refundable{" "}
+            <span className="font-semibold text-white">$500 commitment</span> — we get to work immediately, and if we don't deliver a qualified shipper, you get every cent back.
+          </p>
+        </Reveal>
+        <Reveal delay={380}>
+          <div className="mt-10 flex flex-wrap items-center gap-8">
+            <a href="#contact" className="btn-spartan text-sm"><span>Start Winning Clients</span></a>
+            <a href="#how" className="btn-ghost-spartan text-xs">See How It Works →</a>
+          </div>
+        </Reveal>
+        <Reveal delay={520}>
+          <div className="font-label mt-16 flex flex-wrap gap-x-10 gap-y-3 text-[10px] text-white/40">
+            <span>★ Zero Retainer</span>
+            <span>★ $500 Refundable</span>
+            <span>★ Pay Per Closed Client</span>
+          </div>
+        </Reveal>
       </div>
     </section>
   );
