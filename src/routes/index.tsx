@@ -47,7 +47,7 @@ function Nav() {
             </a>
           ))}
         </nav>
-        <a href="#contact" className="btn-spartan text-xs"><span>Deploy Now</span></a>
+        <a href={`mailto:${EMAIL}`} className="btn-spartan text-xs"><span>Deploy Now</span></a>
       </div>
     </header>
   );
@@ -88,7 +88,7 @@ function Hero() {
         </Reveal>
         <Reveal delay={380}>
           <div className="mt-10 flex flex-wrap items-center gap-8">
-            <a href="#contact" className="btn-spartan text-sm"><span>Start Winning Clients</span></a>
+            <a href={`mailto:${EMAIL}`} className="btn-spartan text-sm"><span>Start Winning Clients</span></a>
             <a href="#how" className="btn-ghost-spartan text-xs">See How It Works →</a>
           </div>
         </Reveal>
@@ -284,7 +284,7 @@ function Pricing() {
                 ))}
               </ul>
 
-              <a href="#contact" className="btn-spartan mt-10 w-full text-sm"><span>Deploy 300 Spartan Leads</span></a>
+              <a href={`mailto:${EMAIL}`} className="btn-spartan mt-10 w-full text-sm"><span>Deploy 300 Spartan Leads</span></a>
 
               <p className="font-label mt-6 text-center text-[11px] text-gold">
                 ★ If we don't deliver a qualified shipper, your $500 is returned. No questions asked.
